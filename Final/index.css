@@ -4,5 +4,6 @@
 }
 
 .carousel .carousel-item img {
+    max-height: 900px;
     object-fit: cover;
 }
