@@ -1,0 +1,8 @@
+.slide-pic {
+    height: 500px;
+    width: 100%;
+}
+
+.carousel .carousel-item img {
+    object-fit: cover;
+}
