@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!--連結CSS檔-->
+    <link rel="stylesheet" href="index.css">
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="container-all">
+
+
+        <!-- 左邊 -->
+        <div class="container-left">
+            <!-- 導覽列 -->
+            <nav id="sidebar">
+                <!-- 展往/縮起來 按鈕 -->
+                <button type="button" id="collapse" class="collapse-btn">
+            <i class="fas fa-align-left"></i>
+        </button>
+
+
+                <!-- List 列表 -->
+                <ul class="list-unstyled">
+                    <p> Travel </p>
+                    <li>
+                        <a href="index.html">首頁 <i class="fas fa-home"></i> </a>
+                    </li>
+
+                    <li>
+                        <a href="#sublist" data-bs-toggle="collapse" id="dropdown">國家 <i class="fa-solid fa-plane"></i></a>
+
+                        <!-- 子連結列表  -->
+                        <ul id="sublist" class="list-unstyled collapse">
+                            <li>
+                                <a href="France.html">法國</a>
+                            </li>
+                            <li>
+                                <a href="Japan.html">日本</a>
+                            </li>
+
+                        </ul>
+
+
+                    </li>
+
+                    <li>
+                        <a href="#">住宿推薦 <i class="fa-solid fa-bed"></i>  </a>
+                    </li>
+
+                </ul>
+
+
+            </nav>
+
+        </div>
+        <!-- 右邊 -->
+        <div class="container-right">
+            <div class="container-fluid">
+                <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
+                    <!-- 圖片投影 元件１-->
+                    <div class="carousel-inner">
+                        <!-- 第一張圖片 active　-->
+                        <div class="carousel-item active">
+                            <img class="slide-pic" src="https://www.hkgirlshare.com/wp-content/uploads/2021/05/%E6%97%85%E8%A1%8C%E4%B8%96%E7%95%8C.jpg" alt="slide1">
+                            <div class="carousel-caption">
+                                <h2>Hotel</h2>
+                            </div>
+                        </div>
+
+                        <!-- 第二張圖片 -->
+                        <div class="carousel-item ">
+                            <img class="slide-pic" src="https://images.900.tw/upload_file/other_album/201508/311516.jpeg" alt="slide2">
+
+                        </div>
+
+                        <!-- 第三張圖片 -->
+                        <div class="carousel-item ">
+                            <img class="slide-pic" src="https://ladymoko.com/wp-content/uploads/20181203104749_23.jpg" alt="slide3">
+
+                        </div>
+
+                        <div class="carousel-item ">
+                            <img class="slide-pic" src="http://www.tourjpguide.com/wp-content/uploads/2019/06/19_tokiwa_web8.jpg" alt="slide4">
+
+                        </div>
+
+                    </div>
+
+                    <!-- 左右按鈕　元件２ -->
+                    <!-- 左邊按鈕 -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#slideshow" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                    <!-- 右邊按鈕 -->
+                    <button class="carousel-control-next" type="button" data-bs-target="#slideshow" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+
+                    <!-- 指示按鈕　元件３ -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active">
+                        
+                                        </button>
+
+                        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1">
+                        
+                                        </button>
+
+                        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2">
+                        
+                                        </button>
+
+                        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="3">
+                        
+                                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <hr>
+            <h2>
+                <p class="font"><b>飯店</b></p>
+            </h2>
+
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">法國飯店</li>
+                </ol>
+            </nav>
+
+            <div class="d-flex p-2 bd-highlight">
+                <h4><b>法國旅遊人氣地區飯店</b></h4>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Booking</font></font></strong>
+                            <h3 class="mb-0">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">L'Elysée Val d'Europe</font>
+                                </font>
+                            </h3>
+                            <div class="mb-1 text-muted">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">地理位置超棒</font>
+                                </font>
+                            </div>
+                            <p class="card-text mb-auto">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">距離歐洲谷購物中心（Val D'Europe）和水族海洋館（Sea Life Acquarium）僅數分鐘路程，距離巴黎迪士尼樂園 2 公里，住宿設有免費 WiFi。</font>
+                                </font>
+                            </p>
+                            <a href="https://www.booking.com/hotel/fr/elyseevaldeurope.zh-tw.html?aid=365748&label=fr-JP8d_elAGiiW%2AmzRvUqlzgS393062514447%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-297601666475%3Akwd-12458786619%3Alp9040313%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt1HFYicIjbLZw&sid=152bd944ce7e1218ccaae90ee88e8153&dest_id=1569;dest_type=region;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1655624522;srpvid=d95a30086b6103b5;type=total;ucfs=1&#hotelTmpl"
+                                class="stretched-link">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">顯示更多</font>
+                                </font>
+                            </a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <div>
+                                <img class="img-thumbnail" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/76634885.jpg?k=9c75e39fd0a503074918da80584d421f1fed9982a997b0193e4b2f726c958c65&o=&hp=1" alt="飯店" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Booking</font></font></strong>
+                            <h3 class="mb-0">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Dazzling Stay</font>
+                                </font>
+                            </h3>
+                            <div class="mb-1 text-muted">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">免費停車很賺</font>
+                                </font>
+                            </div>
+                            <p class="mb-auto">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">設有共用休息室和露台，距離山谷購物中心 600 公尺，距離歐洲水族海洋館 600 公尺，距離歐洲谷購物中心不到 1 公里。提供免費私人停車位、共用廚房和 WiFi（免費）。住宿可提供額外收費的毛巾和寢具。</font>
+                                </font>
+                            </p>
+                            <a href="https://www.booking.com/hotel/fr/welcome-au-dazzling-stay.zh-tw.html?aid=365748&label=fr-JP8d_elAGiiW%2AmzRvUqlzgS393062514447%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-297601666475%3Akwd-12458786619%3Alp9040313%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt1HFYicIjbLZw&sid=152bd944ce7e1218ccaae90ee88e8153&dest_id=1569;dest_type=region;dist=0;group_adults=2;group_children=0;hapos=4;hpos=4;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1655624522;srpvid=d95a30086b6103b5;type=total;ucfs=1&#hotelTmpl"
+                                class="stretched-link">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">顯示更多</font>
+                                </font>
+                            </a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="img-thumbnail" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/321887929.jpg?k=24b3057cd464d32902895cffe310be286543c9d4e298039d2f0a976fb0a27853&o=&hp=1" alt="飯店" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Booking</font></font></strong>
+                            <h3 class="mb-0">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Bateau Libre Hotel</font>
+                                </font>
+                            </h3>
+                            <div class="mb-1 text-muted">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">有海灘就是爽</font>
+                                </font>
+                            </div>
+                            <p class="card-text mb-auto">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">從住宿步行 6 分鐘即可抵達海灘。 Bateau Libre Hotel 位於貝諾代，設有酒吧和露台。這間住宿提供的設施與服務包括客房服務、共用休息室以及全館 WiFi（免費）。</font>
+                                </font>
+                            </p>
+                            <a href="https://www.booking.com/hotel/fr/bateau-libre.zh-tw.html?aid=365748&label=fr-JP8d_elAGiiW%2AmzRvUqlzgS393062514447%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-297601666475%3Akwd-12458786619%3Alp9040313%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt1HFYicIjbLZw&sid=152bd944ce7e1218ccaae90ee88e8153"
+                                class="stretched-link">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">顯示更多</font>
+                                </font>
+                            </a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="img-thumbnail" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/255218301.jpg?k=6aeffc9db8fccf830ec27d40773038ab125aff6d84601debaba018da5e9b45cb&o=&hp=1" alt="飯店" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Booking</font></font></strong>
+                            <h3 class="mb-0">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Saint Brieuc</font>
+                                </font>
+                            </h3>
+                            <div class="mb-1 text-muted">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">室內游泳池好棒棒</font>
+                                </font>
+                            </div>
+                            <p class="mb-auto">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">設有酒吧、餐廳、室內游泳池和健身中心，距離聖布里厄火車站有270米，距離市中心有5分鐘的步行路程。所有客房均配有平板電視以及帶吹風機和免費洗浴用品的私人浴室。</font>
+                                </font>
+                            </p>
+                            <a href="https://www.booking.com/hotel/fr/novotel-saint-brieuc-centre-gare.zh-tw.html?aid=365748&label=fr-JP8d_elAGiiW%2AmzRvUqlzgS393062514447%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-297601666475%3Akwd-12458786619%3Alp9040313%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt1HFYicIjbLZw&sid=152bd944ce7e1218ccaae90ee88e8153&breadcrumb=hotel&"
+                                class="stretched-link">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">顯示更多</font>
+                                </font>
+                            </a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="img-thumbnail" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/118237076.jpg?k=e1982e02676f2cf61920526e9e8612f0cdbbffcf4fc4f0f9b8d3ac109cde30e9&o=&hp=1" alt="飯店" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <div style="border:1px solid gray; padding: 10px;" class="d-flex position-relative">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Tour_eiffel_at_sunrise_from_the_trocadero.jpg/170px-Tour_eiffel_at_sunrise_from_the_trocadero.jpg" class="flex-shrink-0 me-3" alt="法國" height="100px">
+                <div>
+                    <h5 style="text-align:left;" class="mt-0">最適合前往法國的季節</h5>
+                    <p>規劃您的前往法國旅程時，記得善用我們的每月指南，掌握天氣、熱門活動、住宿費用等多項資訊。</p>
+                    <a href="https://www.booking.com/best-time/country/fr.zh-tw.html?aid=365748&label=fr-JP8d_elAGiiW%2AmzRvUqlzgS393062514447%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-297601666475%3Akwd-12458786619%3Alp9040313%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt1HFYicIjbLZw&sid=152bd944ce7e1218ccaae90ee88e8153"
+                        class="stretched-link">
+                        <p class="text-left">了解法國季節</p>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <nav style="--bs-breadcrumb-divider: '<'; float: right; margin: 3em;" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+
+                    <li class="breadcrumb-item active" aria-current="page">日本飯店</li>
+                    <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+
+                </ol>
+            </nav>
+
+            <hr>
+            <div class="container-intro text-center">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h2 class="txt">
+
+                            <p class="col-sm-4">
+                                <B>日本平飯店</B>(Nippondaira)</p>
+
+
+                        </h2>
+                        <p class="lead">住宿提供免費Wi-Fi和免費停車服務，讓您保持連線，並來去自如。 住宿位於靜岡清水的絕佳位置，讓您輕鬆探索熱門景點和餐飲選擇。</p>
+                        <p>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">評價</a>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">重點設施</button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">快速觀看</button>
+                            </div>
+                        </p>
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                    <div class="card card-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <p style="font-size: 2px;">整體狀況</p>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <p style="font-size: 2px;">位置</p>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 87%;" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">87%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <p style="font-size: 2px;">設施與設備</p>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 89%;" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">89%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <p style="font-size: 2px;">CP值</p>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 87%;" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">87%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                    <div class="card card-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <i class="fa-solid fa-spray-can-sparkles"></i>
+                                            </div>
+                                            <div class="col-8">
+                                                <p>乾淨整潔</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <i class="fa-solid fa-door-open"></i>
+                                            </div>
+                                            <div class="col-8">
+                                                <p>24小時櫃台服務</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <i class="fa-solid fa-bed"></i>
+                                            </div>
+                                            <div class="col-8">
+                                                <p>客房舒適</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <i class="fa-solid fa-mountain-sun"></i>
+                                            </div>
+                                            <div class="col-8">
+                                                <p>景觀很棒</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 ">
+                        <a href="https://www.google.com/search?q=%E8%89%BE%E8%8F%B2%E7%88%BE%E9%90%B5%E5%A1%94&sxsrf=ALiCzsZQ64ZdxuCy-EAhuPxZUIN51gxsjQ:1655544929875&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiFt9G72bb4AhVWq1YBHX8yApAQ_AUoAXoECAIQAw&biw=1707&bih=802&dpr=1.13"> <img class="photo" data-bs-toggle="tooltip" data-bs-placement="top" title="點擊觀看更多" src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/39697120.jpg?k=8501b0acda342476468a56f9a80b7e9c1ac2077f97cf70421213b16b76d79c53&o=" width="400px"
+                                height="400px" alt="日本飯店"></a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div style="margin:1em">
+
+                <!-- Three columns of text below the carousel -->
+                <div class="row">
+                    <div class="col-lg-4" style="background-color: #ECECFF; padding: 15px;">
+
+                        <img class="img-thumbnail;bd-placeholder-img rounded-circle" src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/241800027.jpg?k=b32fd3db7d560b8167337e3763ebd24900775ec28abe5629cae866e7308028a7&o=" alt=" 飯店 " width="250 " height="250
+                        " preserveAspectRatio="xMidYMid slice " focusable="false ">
+                        <h4 class="fw-normal ">
+                            <font style="vertical-align: inherit; ">
+                                <font style="vertical-align: inherit; ">Grand Hills Shizuoka</font>
+                            </font>
+                        </h4>
+                        <p>
+                            <font style="vertical-align: inherit; ">
+                                <font style="vertical-align: inherit; "> 飯店提供免費Wi-Fi，無論您想發照片、回郵件，都能輕鬆完成。 自駕前往的住客可免費停車。 前台提供保險箱、行李寄放服務和禮賓服務，協助您解決相關需求。</font>
+
+                            </font>
+                        </p>
+                        <p>
+                            <div style="float:center ">
+                                <a class="btn btn-secondary " href="https://www.agoda.com/zh-tw/hotel-century-shizuoka/hotel/shizuoka-jp.html?finalPriceView=2&isShowMobileAppPrice=false&cid=1763341&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2022-07-10&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=HKD&isFreeOccSearch=false&tag=1c4e22a8-3973-4dea-bab2-5f0a8441b2b3&flexibleDateSearchCriteria=[object%20Object]&isCityHaveAsq=false&tspTypes=9,9&los=4&searchrequestid=31567754-5dab-45c8-b68f-e55387c440a7 ">
+                                    <font style="vertical-align: inherit; ">
+                                        <font style="vertical-align: inherit; ">查看詳情</font>
+                                    </font>
+                                </a>
+                            </div>
+                        </p>
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4 " style="padding: 15px;">
+
+                        <img class="img-thumbnail;bd-placeholder-img rounded-circle " src="https://pix8.agoda.net/hotelImages/27917314/-1/1381a681090512a31920add714f26278.jpg?ca=26&ce=0&s=1024x768 " alt="飯店 " width="250 " height="250 " preserveAspectRatio="xMidYMid
+                        slice " focusable="false ">
+                        <h4 class="fw-normal ">
+                            <font style="vertical-align: inherit; ">
+                                <font style="vertical-align: inherit; ">Celeste Shizuoka</font>
+                            </font>
+                        </h4>
+                        <p>
+                            <font style="vertical-align: inherit; ">
+                                <font style="vertical-align: inherit; ">部分房型設計包含獨立客廳和陽台或露台， 部分精選房型有冰箱和即溶咖啡供您使用， 部分客房浴室提供浴巾和吹風機，讓您神清氣爽。身處中心地帶，省下時間和交通路程。
+                                </font>
+
+                            </font>
+                        </p>
+                        <p>
+                            <div style="float:center ">
+                                <a class="btn btn-secondary " href="https://www.agoda.com/zh-tw/hotel-celeste-shizuoka/hotel/shizuoka-jp.html?finalPriceView=2&isShowMobileAppPrice=false&cid=1763341&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2022-07-10&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=HKD&isFreeOccSearch=false&tag=1c4e22a8-3973-4dea-bab2-5f0a8441b2b3&flexibleDateSearchCriteria=[object%20Object]&isCityHaveAsq=false&los=4&searchrequestid=31567754-5dab-45c8-b68f-e55387c440a7 ">
+                                    <font style="vertical-align: inherit; ">
+                                        <font style="vertical-align: inherit; ">查看詳情</font>
+                                    </font>
+                                </a>
+                            </div>
+                        </p>
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4 " style="background-color: #ECECFF; padding: 15px; ">
+
+                        <img class="img-thumbnail;bd-placeholder-img rounded-circle" src="https://pix8.agoda.net/hotelImages/648/648633/648633_14060711380019743677.jpg?ca=13&ce=1&s=1024x768 " alt="飯店 " width="250 " height="250 " preserveAspectRatio="xMidYMid slice
+                        " focusable="false ">
+                        <h4 class="fw-normal ">
+                            <font style="vertical-align: inherit; ">
+                                <font style="vertical-align: inherit; ">Kuretake-INN</font>
+                            </font>
+                        </h4>
+                        <p>
+                            <font style="vertical-align: inherit; ">
+                                <font style="vertical-align: inherit; ">提供洗衣服務和乾洗服務，喜歡的衣服可以穿不停！客房附有空調和遮光窗簾。 部分房型提供有線電視讓住客享受娛樂。部分客房提供冰箱和咖啡機或茶壺。</font>
+                            </font>
+                        </p>
+                        <p>
+                            <div style="float:center ">
+                                <a class="btn btn-secondary " href="https://www.agoda.com/zh-tw/kuretake-inn-premium-shizuoka/hotel/shizuoka-jp.html?finalPriceView=2&isShowMobileAppPrice=false&cid=1763341&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2022-07-10&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=HKD&isFreeOccSearch=false&tag=1c4e22a8-3973-4dea-bab2-5f0a8441b2b3&flexibleDateSearchCriteria=%5Bobject%20Object%5D&isCityHaveAsq=false&los=4&searchrequestid=31567754-5dab-45c8-b68f-e55387c440a7&preq=ec19f9e1-979a-4b72-875e-db8ae7d57778&ri=3 ">
+                                    <font style="vertical-align: inherit; ">
+                                        <font style="vertical-align: inherit; ">查看詳情</font>
+                                    </font>
+                                </a>
+                            </div>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <footer>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+                                </li>
+
+                                <li class="nav-item dropup">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">國家
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="France.html">法國</a></li>
+                                        <li><a class="dropdown-item" href="Japan.html">日本</a></li>
+
+                                    </ul>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="booking.html">住宿推薦</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <ul class="list-inline pager">
+                    <li class="list-inline-item previous"><a class="btn btn-primary" href="Japan.html" role="button">上一頁</a></li>
+                    <li class="list-inline-item next"><a class="btn btn-primary" href="index.html" role="button">回首頁</a></li>
+                </ul>
+                <a href="#">Back to top</a>
+
+
+            </footer>
+
+
+
+        </div>
+
+
+    </div>
+
+    </div>
+</body>

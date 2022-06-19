@@ -7,32 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <!--<style>
-        @media screen and (max-width: 480px) {
-            body {
-                background-color: #0047AB;
-            }
-            article {
-                float: left;
-                width: 70%;
-            }
-            aside {
-                float: right;
-                width: 30%;
-            }
-            footer {
-                clear: both;
-            }
-            img {
-                width: 200px;
-            }
-        }
-    </style>-->
 
     <!--連結CSS檔-->
     <link rel="stylesheet" href="index.css">
@@ -44,38 +24,219 @@
 </head>
 
 <body>
-    <header>
 
-    </header>
-    <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://www.hkgirlshare.com/wp-content/uploads/2021/05/%E6%97%85%E8%A1%8C%E4%B8%96%E7%95%8C.jpg" class="slide-pic" alt="1">
-            </div>
-            <div class="carousel-item">
-                <img src="https://img.soundofhope.org/2021-05/1621577687709.jpg" class="slide-pic" alt="2">
-            </div>
-            <div class="carousel-item">
-                <img src="https://storage.googleapis.com/www-cw-com-tw/article/202008/article-5f27ce026104d.jpg" class="slide-pic" alt="3">
-            </div>
-            <div class="carousel-item">
-                <img src="https://asia.leo-travel.idv.tw/wp-content/uploads/2021/12/japan-kyoto-Kiyomizu-dera-cherry-blossoms-shutterstock_734106217-1.jpg" class="slide-pic" alt="4">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#slideshow" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+    <div class="container-all">
+
+
+        <!-- 左邊 -->
+        <div class="container-left">
+            <!-- 導覽列 -->
+            <nav id="sidebar">
+                <!-- 展往/縮起來 按鈕 -->
+                <button type="button" id="collapse" class="collapse-btn">
+            <i class="fas fa-align-left"></i>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#slideshow" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+
+
+                <!-- List 列表 -->
+                <ul class="list-unstyled">
+                    <p> Travel </p>
+                    <li>
+                        <a href="#">首頁 <i class="fas fa-home"></i> </a>
+                    </li>
+
+                    <li>
+                        <a href="#sublist" data-bs-toggle="collapse" id="dropdown">國家 <i class="fa-solid fa-plane"></i></a>
+
+                        <!-- 子連結列表  -->
+                        <ul id="sublist" class="list-unstyled collapse">
+                            <li>
+                                <a href="France.html">法國</a>
+                            </li>
+                            <li>
+                                <a href="Japan.html">日本</a>
+                            </li>
+
+                        </ul>
+
+
+                    </li>
+
+                    <li>
+                        <a href="booking.html">住宿推薦 <i class="fa-solid fa-bed"></i>  </a>
+                    </li>
+
+                </ul>
+
+
+            </nav>
+
+        </div>
+
+        <!-- 右邊 -->
+        <div class="container-right">
+            <div class="container-fluid">
+                <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
+                    <!-- 圖片投影 元件１-->
+                    <div class="carousel-inner">
+                        <!-- 第一張圖片 active　-->
+                        <div class="carousel-item active">
+                            <img class="slide-pic" src="https://www.hkgirlshare.com/wp-content/uploads/2021/05/%E6%97%85%E8%A1%8C%E4%B8%96%E7%95%8C.jpg" alt="slide1">
+                            <div class="carousel-caption">
+                                <h2>The Future Of Travel</h2>
+                            </div>
+                        </div>
+
+                        <!-- 第二張圖片 -->
+                        <div class="carousel-item ">
+                            <img class="slide-pic" src="https://img.soundofhope.org/2021-05/1621577687709.jpg" alt="slide2">
+
+                        </div>
+
+                        <!-- 第三張圖片 -->
+                        <div class="carousel-item ">
+                            <img class="slide-pic" src="https://storage.googleapis.com/www-cw-com-tw/article/202008/article-5f27ce026104d.jpg" alt="slide3">
+
+                        </div>
+
+                        <div class="carousel-item ">
+                            <img class="slide-pic" src="https://asia.leo-travel.idv.tw/wp-content/uploads/2021/12/japan-kyoto-Kiyomizu-dera-cherry-blossoms-shutterstock_734106217-1.jpg" alt="slide4">
+
+                        </div>
+
+                    </div>
+
+                    <!-- 左右按鈕　元件２ -->
+                    <!-- 左邊按鈕 -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#slideshow" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                    <!-- 右邊按鈕 -->
+                    <button class="carousel-control-next" type="button" data-bs-target="#slideshow" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+
+                    <!-- 指示按鈕　元件３ -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active">
+                
+                                </button>
+
+                        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1">
+                
+                                </button>
+
+                        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2">
+                
+                                </button>
+
+                        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="3">
+                
+                                </button>
+
+                    </div>
+
+                </div>
+
+
+                <hr>
+
+
+                <div class="container-intro text-center">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <h2 class="txt">
+                                <B>法國</B> <span>(France)</span>
+                            </h2>
+                            <p class="lead">位於西歐並具有海外大區及領地的主權國家，首都為歐洲大陸最大的文化與金融中心巴黎。世界上最受歡迎的旅遊目的地，擁有37個聯合國教科文組織認定的世界文化遺產，同時擁有文化氛圍濃厚的城市、海灘和海岸度假勝地、滑雪度假村以及景色優美而寧靜的農村地區。</p>
+                        </div>
+
+                        <div class="col-lg-5 ">
+                            <a href="https://www.google.com/search?q=%E8%89%BE%E8%8F%B2%E7%88%BE%E9%90%B5%E5%A1%94&sxsrf=ALiCzsZQ64ZdxuCy-EAhuPxZUIN51gxsjQ:1655544929875&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiFt9G72bb4AhVWq1YBHX8yApAQ_AUoAXoECAIQAw&biw=1707&bih=802&dpr=1.13"> <img class="photo" data-bs-toggle="tooltip" data-bs-placement="top" title="點擊觀看更多" src="https://www.natgeomedia.com/wp-content/uploads/2015/10/1.jpg" width="400px" height="400px" alt="巴黎鐵塔"></a>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <hr>
+
+
+                <div class="container-intro text-center">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <a href="https://www.google.com/search?q=%E7%9B%AE%E9%BB%91%E5%B7%9D%E6%AB%BB%E8%8A%B1&tbm=isch&ved=2ahUKEwjPm9fh2bb4AhWcIqYKHVdhAhEQ2-cCegQIABAA&oq=%E7%9B%AE%E9%BB%91%E5%B7%9D%E6%AB%BB%E8%8A%B1&gs_lcp=CgNpbWcQAzIFCAAQgAQyBAgAEBg6BAgjECdQ3AlY2xRg9hdoAHAAeACAAX-IAdkEkgEDNy4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=sZytYo__J5zFmAXXwomIAQ&bih=802&biw=1707">
+                                <img class="photo" data-bs-toggle="tooltip" data-bs-placement="top" title="點擊觀看更多" src="https://i1.wp.com/banbi.tw/wp-content/uploads/20190401212031_81.jpg" width="400px" height="400px" alt="日本櫻花"></a>
+                        </div>
+
+                        <div class="col-lg-7">
+
+                            <h2 class="txt">
+                                <B>日本</B> <span>(Japan)</span>
+                            </h2>
+                            <p class="lead">位於東亞的島嶼國家，沒有法定首都，國家的行政中心位於東京都。東京都內最知名的莫過於沿著蜿蜒「目黑川」所綻放的櫻花，從跨越河岸的小橋上可眺望兩側看不見盡頭的粉色櫻花走廊。</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="container px-4 py-5" id="custom-cards">
+                    <h2 style="color:darkblue" class="pb-2 border-bottom"><b>更多旅遊景點</b></h2>
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <footer>
+                <a href="#">Back to top</a>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                                </li>
+
+                                <li class="nav-item dropup">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">國家
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="France.html">法國</a></li>
+                                        <li><a class="dropdown-item" href="Japan.html">日本</a></li>
+
+                                    </ul>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="booking.html">住宿推薦</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+
+
+
+            </footer>
+
+
+        </div>
+
+
     </div>
 
 
@@ -84,7 +245,12 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+
+
+
+
 </body>
 
 </html>

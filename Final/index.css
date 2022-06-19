@@ -3,7 +3,298 @@
     width: 100%;
 }
 
-.carousel .carousel-item img {
-    max-height: 900px;
-    object-fit: cover;
+@media (max-width:600px) {
+    .slide-pic {
+        height: 250px;
+        width: 100%;
+    }
+}
+
+@media (max-width:1300px) {
+    .slide-pic {
+        height: 350px;
+        width: 100%;
+    }
+}
+
+.carousel-item h2 {
+    color: white;
+    background: rgb(16, 43, 28);
+    background: linear-gradient(90deg, rgba(16, 43, 28, 0) 25%, rgba(50, 53, 52, 0.798739564185049) 33%, rgba(53, 54, 53, 0.809943960494354) 70%, rgba(54, 54, 54, 0) 80%);
+}
+
+.container-all {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    width: 250px;
+    height: 530%;
+    background-color: #5E86C1;
+    color: white;
+    transition: 1s;
+}
+
+#sidebar.active {
+    margin-left: -200px;
+}
+
+.collapse-btn {
+    position: relative;
+    top: 1%;
+    left: 200px;
+    background-color: #5E86C1;
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.collapse-btn:hover {
+    background-color: #4D80E6;
+    transition: 0.4s;
+}
+
+#sidebar p {
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+#sidebar ul li a:hover {
+    color: #5E86C1;
+    background: #fff;
+}
+
+.fas,
+.far,
+.fa-solid {
+    float: right;
+}
+
+ul ul li a {
+    background-color: #B0C4DE;
+    font-size: 20px;
+    font-style: italic;
+}
+
+@media (max-width:600px) {
+    #sidebar {
+        margin-left: -100px;
+        width: 150px;
+        font-size: 20px;
+    }
+    .collapse-btn {
+        position: relative;
+        top: 1%;
+        left: 110px;
+    }
+    #sidebar.active {
+        margin-left: 0px;
+    }
+    #sidebar ul p {
+        font-size: 18px;
+        text-align: left;
+    }
+}
+
+@media (max-width:1200px) {
+    #sidebar {
+        margin-left: -100px;
+        height: 700%;
+        width: 150px;
+        font-size: 20px;
+    }
+    .collapse-btn {
+        position: relative;
+        top: 1%;
+        left: 110px;
+    }
+    #sidebar.active {
+        margin-left: 0px;
+    }
+    #sidebar ul p {
+        font-size: 18px;
+        text-align: left;
+    }
+}
+
+@media (max-width:1400px) {
+    .photo {
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 2em;
+    }
+}
+
+.container-right {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 30px;
+}
+
+hr {
+    margin: 5rem 0;
+}
+
+.txt {
+    display: flex;
+    align-self: center;
+    margin: 3rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 2rem;
+}
+
+p {
+    display: block;
+    text-align: left;
+}
+
+footer {
+    margin: 7rem 0;
+}
+
+.font {
+    text-align: center;
+    color: darkblue;
+    margin: 2em;
+}
+
+.headline {
+    margin: 10px;
+    text-align: left;
+}
+
+.color {
+    background-color: #ECF5FF;
+}
+
+.rwd-map {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+    padding-bottom: 75%;
+}
+
+.rwd-map iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.align-items-stretch {
+    align-items: stretch!important;
+}
+
+@media screen and (max-width: 769px) {
+    .index_container {
+        padding: 5% 14px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        /* padding: 2% 10px 2%; */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .index_hot_player {
+        flex-wrap: wrap;
+        margin-bottom: 3%;
+    }
+}
+
+.index_hot_player {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.h_padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.row {
+    margin: auto;
+    float: none;
+    clear: none;
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+}
+
+#photo {
+    width: 540px;
+    height: 620px;
+}
+
+@media (max-width:1000px) {
+    #photo {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media (max-width:800px) {
+    #photo {
+        width: 400px;
+        height: 500px;
+    }
+}
+
+@media (max-width:700px) {
+    #photo {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+#photo1 {
+    width: 520px;
+    height: 400px;
+}
+
+@media (max-width:700px) {
+    #photo1 {
+        width: 400px;
+        height: 350px;
+    }
+}
+
+#photo2 {
+    width: 520px;
+    height: 610px;
+}
+
+@media (max-width:700px) {
+    #photo2 {
+        width: 400px;
+        height: 350px;
+    }
 }

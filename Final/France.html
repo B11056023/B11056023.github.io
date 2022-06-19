@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!--連結CSS檔-->
+    <link rel="stylesheet" href="index.css">
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="container-all">
+
+
+        <!-- 左邊 -->
+        <div class="container-left">
+            <!-- 導覽列 -->
+            <nav id="sidebar">
+                <!-- 展往/縮起來 按鈕 -->
+                <button type="button" id="collapse" class="collapse-btn">
+            <i class="fas fa-align-left"></i>
+        </button>
+
+
+                <!-- List 列表 -->
+                <ul class="list-unstyled">
+                    <p> Travel </p>
+                    <li>
+                        <a href="index.html">首頁 <i class="fas fa-home"></i> </a>
+                    </li>
+
+                    <li>
+                        <a href="#sublist" data-bs-toggle="collapse" id="dropdown">國家 <i class="fa-solid fa-plane"></i></a>
+
+                        <!-- 子連結列表  -->
+                        <ul id="sublist" class="list-unstyled collapse">
+                            <li>
+                                <a href="France.html">法國</a>
+                            </li>
+                            <li>
+                                <a href="Japan.html">日本</a>
+                            </li>
+
+                        </ul>
+
+
+                    </li>
+
+                    <li>
+                        <a href="booking.html">住宿推薦 <i class="fa-solid fa-bed"></i>  </a>
+                    </li>
+
+                </ul>
+
+
+            </nav>
+
+        </div>
+
+        <!-- 右邊 -->
+        <div class="container-right">
+            <div class="container-fluid">
+                <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
+                    <!-- 圖片投影 元件１-->
+                    <div class="carousel-inner">
+                        <!-- 第一張圖片 active　-->
+                        <div class="carousel-item active">
+                            <img class="slide-pic" src="https://www.hkgirlshare.com/wp-content/uploads/2021/05/%E6%97%85%E8%A1%8C%E4%B8%96%E7%95%8C.jpg" alt="slide1">
+                            <div class="carousel-caption">
+                                <h2>France</h2>
+                            </div>
+                        </div>
+
+                        <!-- 第二張圖片 -->
+                        <div class="carousel-item ">
+                            <img class="slide-pic" src="https://insidr.co/wp-content/uploads/2018/05/Paris-river-pont-bridge-alexandre-3-1170x778.jpg" alt="slide2">
+
+                        </div>
+
+                        <!-- 第三張圖片 -->
+                        <div class="carousel-item ">
+                            <img class="slide-pic" src="https://www.hotelscombined.com.tw/news/wp-content/uploads/sites/316/2019/05/F1-5.jpg" alt="slide3">
+
+                        </div>
+
+                        <div class="carousel-item ">
+                            <img class="slide-pic" src="https://content.shopback.com/tw/wp-content/uploads/2018/08/23163559/paris-visit-spot.jpg" alt="slide4">
+
+                        </div>
+
+                    </div>
+
+                    <!-- 左右按鈕　元件２ -->
+                    <!-- 左邊按鈕 -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#slideshow" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                    <!-- 右邊按鈕 -->
+                    <button class="carousel-control-next" type="button" data-bs-target="#slideshow" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+
+                    <!-- 指示按鈕　元件３ -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active">
+                
+                                </button>
+
+                        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1">
+                
+                                </button>
+
+                        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2">
+                
+                                </button>
+
+                        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="3">
+                
+                                </button>
+
+                    </div>
+
+                </div>
+
+                <hr>
+                <h2>
+                    <p class="font"><b>旅遊行程推薦</b></p>
+                </h2>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6">
+                        <img class="photo" src="http://www.caneis.com.tw/link/info/europ_info/Frence/images/Paris07-001-1.jpg" width="350px" height="300px" margin="2em" alt="艾菲爾鐵塔">
+                        <h4 class="headline">艾菲爾鐵塔</h4>
+                        <p>位於法國巴黎第七區、塞納河畔戰神廣場的鐵製鏤空塔，為巴黎最高建築物。艾菲爾鐵塔建成於1889年，初名為「三百米塔」，後得名自其設計師居斯塔夫·艾菲爾。 </p>
+
+                        <p>
+                            <a href="https://zh.wikipedia.org/wiki/%E8%89%BE%E8%8F%B2%E7%88%BE%E9%90%B5%E5%A1%94" target="_blank">
+                                <button class="btn btn-primary" type="button" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Loading...
+                                </button>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="color">
+                            <img class="photo" src="https://watermark.lovepik.com/photo/20211201/large/lovepik-arc-de-triomphe-paris-france-picture_501321317.jpg" width="350px" height="300px" margin="2em" alt="凱旋門">
+                            <h4 class="headline">巴黎凱旋門</h4>
+                            <p>位於法國巴黎十七區的戴高樂廣場中央。拿破崙為紀念1805年打敗俄奧聯軍的勝利，隔年下令修建而成的。法國舉國歡慶國慶節時，法國總統都要從凱旋門下通過。 </p>
+                            <p>
+                                <a href="https://zh.wikipedia.org/zh-tw/%E5%B7%B4%E9%BB%8E%E5%87%AF%E6%97%8B%E9%97%A8" target="_blank">
+                                    <button class="btn btn-primary" type="button" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Loading...
+                                </button>
+                                </a>
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <img class="photo" src="https://www.ppaper.net/ckfinder/connector?command=Proxy&type=Images&currentFolder=%2F&fileName=2005-2007(1).jpg" width="350px" height="300px" margin="2em" alt="凡爾賽宮">
+                        <h4 class="headline">凡爾賽宮</h4>
+                        <p>位於法國巴黎西南郊外伊夫林省的省會凡爾賽。一座兼具觀賞性和實用性的宮殿，以金色、藍色和粉橘色為主基調，傾其所能表現「絢爛豪華的奢侈美」，這種風格被後世稱為「巴洛克」風格。</p>
+                        <p>
+                            <a href="https://zh.m.wikipedia.org/zh-tw/%E5%87%A1%E5%B0%94%E8%B5%9B%E5%AE%AB" target="_blank">
+                                <button class="btn btn-primary" type="button" disabled>
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    Loading...
+                                    </button>
+
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row py-5">
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="color">
+                            <img class="photo" src="https://popbee.com/image/2020/03/0302001.jpg" width="350px" height="300px" alt="羅浮宮">
+                            <h4 class="headline">羅浮宮</h4>
+                            <p>位於法國法蘭西島的首都巴黎市中心塞納河畔。收藏著大約40萬件的藝術作品，涵蓋古埃及、希臘、古東方、美術工藝、繪畫和雕塑等等門類，成為法國文化的旗鑑、歐洲規模最大的宮殿群。 </p>
+                            <p>
+                                <a href="https://www.travelking.com.tw/tourguide/scenery100465.html" target="_blank">
+
+                                    <button class="btn btn-primary" type="button" disabled>
+                                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                        Loading...
+                                        </button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <img class="photo" src="https://wowlavie-aws.hmgcdn.com/file/article_all/A1555652388.jpg" width="350px" height="300px" alt="凱旋門">
+                        <h4 class="headline">巴黎聖母院</h4>
+                        <p>位於法國巴黎第四區西堤島的天主教教堂，屬於哥德式建築。樓梯共有387階台階，在玫瑰窗層的哥德式大廳停靠，遊客可以在那裡俯瞰巴黎的景觀，同時也能欣賞聖母院歷史早期的繪畫和雕塑收藏。</p>
+                        <p><a href="https://zh.m.wikipedia.org/zh-tw/%E5%B7%B4%E9%BB%8E%E8%81%96%E6%AF%8D%E9%99%A2" target="_blank"><button class="btn btn-primary" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Loading...
+                            </button></a></p>
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="color">
+                            <img class="photo" src="https://www.natgeomedia.com/wp-content/uploads/2015/09/%E5%B7%B4%E9%BB%8E-%E4%BA%9E%E6%AD%B7%E5%B1%B1%E5%A4%A7%E4%B8%89%E4%B8%96%E6%A9%8B_130504205.jpg" width="350px" height="300px" alt="凡爾賽宮">
+                            <h4 class="headline">亞歷山大三世橋</h4>
+                            <p>法國巴黎跨越塞納河的一座拱橋，連接右岸的香榭麗舍大街地區和左岸的榮軍院和艾菲爾鐵塔地區。為慶祝俄法建立同盟而建造，橋上的燈具由小愛神托著，寓意性的海長形象構成大橋裝飾的主題。</p>
+                            <p><a href="https://zh.wikipedia.org/zh-tw/%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E4%B8%89%E4%B8%96%E6%A1%A5" target="_blank"><button class="btn btn-primary" type="button" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Loading...
+                                </button></a></p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h2>
+                    <p class="font"><b>法國位置</b></p>
+                </h2>
+                <div class="rwd-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2683794.4512682646!2d1.056998319318821!3d47.45696196077358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54a02933785731%3A0x6bfd3f96c747d9f7!2z5rOV5ZyL!5e0!3m2!1szh-TW!2stw!4v1655642111632!5m2!1szh-TW!2stw"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+                    </iframe>
+                </div>
+
+
+
+
+
+
+            </div>
+            <footer>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+                                </li>
+
+                                <li class="nav-item dropup">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">國家
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="France.html">法國</a></li>
+                                        <li><a class="dropdown-item" href="Japan.html">日本</a></li>
+
+                                    </ul>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="booking.html">住宿推薦</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <ul class="list-inline pager">
+                    <li class="list-inline-item previous"><a class="btn btn-primary" href="index.html" role="button">上一頁</a></li>
+                    <li class="list-inline-item next"><a class="btn btn-primary" href="Japan.html" role="button">下一頁</a></li>
+                </ul>
+                <a href="#">Back to top</a>
+
+
+            </footer>
+        </div>
+    </div>
